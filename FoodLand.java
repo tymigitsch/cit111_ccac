@@ -11,38 +11,38 @@ package objects1;
  */
 public class FoodLand {
     public static void main(String[]args){
-        
+        //new donut object
         Donut glazed;
         glazed= new Donut();
         glazed.name= "Glazed";
-        
+        //new salad object
         Salad house;
         house= new Salad();
         house.name= "House";
         house.containsNuts= false;
         house.lettuceType= "Iceberg";
         house.vegetarian= false;
-        
+        //new burger object
         Burger whopper;
         whopper= new Burger();
         whopper.name= "Whopper";
         whopper.temperature= "medium-well";
         whopper.numPatties= 2;
         whopper.includeSteakSauce= false;
-        
+        //running methods to display each object's variable statuses
         getDonutData(glazed);
         getSaladData(house);
         getBurgerData(whopper);
-        
+        //running donut methods
         glazed.simulateEating(25);
         glazed.getPercRemaining();
-        
+        //running salad methods
         house.eatSalad(40);
         house.addMeat();
-        
+        //running burger methods
         whopper.eatBurger(70);
         whopper.addSteakSauce();
-        
+        //displaying object's variables again to compare to originals
         getDonutData(glazed);
         getSaladData(house);
         getBurgerData(whopper);
