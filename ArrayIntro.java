@@ -20,13 +20,14 @@ public class ArrayIntro {
         int arrayLength= games.length;
         
         for(int x=0; x<arrayLength; x=x+1){
-            //new scanner object, would skip first array entry for some reason if using same scanner object
+            //new scanner object, would skip first array entry for some reason
+            //if using same scanner object. to replicate change ScanScan to inputScan on line 27
             Scanner ScanScan= new Scanner(System.in);
             System.out.println("Please enter the title for game "+(x+1));
             games[x]= ScanScan.nextLine();
             
         }//close for loop
-               
+               //
         facilitateUserInteraction(games);
         
         //this was in this class until it was updated in exercise 4, commented it out
