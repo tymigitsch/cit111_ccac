@@ -26,7 +26,25 @@ public class ArrayIntro {
             games[x]= ScanScan.nextLine();
             
         }//close for loop
+               
         facilitateUserInteraction(games);
+        
+        //this was in this class until it was updated in exercise 4, commented it out
+        /*
+        String [] games= new String[7];
+        
+        games[0]= "Total War: Warhammer II";
+        games[1]= "Counter-Strike: Global Offensive";
+        games[2]= "Darkest Dungeon";
+        games[3]= "Divinity: Original Sin 2";
+        games[4]= "Squad";
+        games[5]= "Rising Storm 2: Vietnam";
+        games[6]= "Dark Souls III";
+        
+        for(int x=0; x<=6; x=x+1){
+            String selectedGame= games[x];
+            System.out.println("Selected game: "+selectedGame);
+        */
     }//close method
     public static void facilitateUserInteraction(String[] anArray){
         Scanner inputScan2= new Scanner(System.in);
